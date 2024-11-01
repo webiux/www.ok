@@ -3,665 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Construction</title>
-   <meta property="og:title" content="Elite Construction">
+    <title>Transaction Portal - Cyber Security Assignment</title>
+    <meta property="og:title" content="Elite Construction">
     <meta property="og:description" content="Discover the charm of Elite Home Designs, where your dream home becomes a reality!!">
     <meta property="og:image" content="https://minii11.github.io/www.Elite-Construction_and_Design.com/image.jpg"> <!-- Update with the correct URL -->
     <meta property="og:url" content="https://minii11.github.io/www.Elite-Construction_and_Design.com/">
     <style>
-      * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-
-header {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Distribute items with space between them */
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-header img {
-    width: 70px;
-    height: auto;
-}
-
-header h1 {
-    color:#355E3B;
-    font-size: 24px;
-    margin: 0; /* Remove default margin */
-    text-align: center;
-    flex-grow: 1; /* Allow h1 to take available space */
-}
-
-.menu-icon {
-    font-size: 40px;
-    cursor: pointer;
-    color: #355E3B;
-    margin-left: auto; /* Push menu icon to the far right */
-    display: flex;
-    align-items: center; /* Center vertically */
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: row; /* Align items in a row */
-        justify-content: space-between; /* Adjust alignment for mobile */
-    }
-
-    header h1 {
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
-
-    .menu-icon {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: row; /* Align items in a row */
-        justify-content: center; /* Center header content horizontally */
-    }
-
-    header img {
-        position: absolute;
-        left: 15px;
-    }
-
-    header h1 {
-        font-size: 20px; /* Adjust font size for smaller screens */
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .menu-icon {
-        font-size: 35px;
-        right: 15px;
-    }
-}
-
- .sidebar {
-            display: none;
-            position: fixed;
-            top: 80px;
-            left: 0;
-            width: 100%;
-            background-color: #d1ffbd;
-            color: #32612D;
-            z-index: 999;
-        }
-
-       .sidebar a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #32612D;
-    display: block;
-    text-align: center;
-    border-bottom: 2px solid #E4CD05; /*yellow outline inside sidebar links */
-}
-
-.sidebar a:hover {
-    background-color: lightyellow;
-}
-
-.main-content {
-    margin-top: 100px;
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: lightblack;
-}
-
-.image-container {
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .main-content {
-        font-size: 20px;
-    }
-
-    .sidebar a {
-        font-size: 18px;
-    }
-}
-
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #65350F; /* Text color */
-    margin-top: 20px;
-    font-size: 0.6em;
-    border-bottom: 2px solid #004d00; /* Dark green border */
-    padding-bottom: 5px;
-}
-p {
-    line-height: 1.6;
-    color: #555;
-    margin: 10px 0;
-    font-size: 0.6em;
-}
-
-         body {
+        body {
             font-family: Arial, sans-serif;
+            background-color: #1a1a2e; /* Dark navy */
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 20px;
+            color: #eaeaea; /* Light grey */
         }
-
-        .image-container {
-            position: relative;
-            width: 100%;
+        .container {
             max-width: 600px;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
+            margin: auto;
+            background: #0f3460; /* Darker navy */
             border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
         }
-
-        .image-container .btn {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent light white */
-            color: #333;
-            padding: 10px 20px;
-            border: none;
+        h1 {
+            text-align: center;
+            color: #ff6f20; /* Bright orange */
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ff6f20; /* Bright orange */
             border-radius: 5px;
-            font-size: 16px;
+            background-color: #16213e; /* Darker blue */
+        }
+        .highlight {
+            background-color: #ff6f20; /* Bright orange */
+            color: black;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .section h2 {
+            margin: 0 0 10px;
+            color: #ff6f20; /* Bright orange */
+        }
+        .section p {
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ff6f20; /* Bright orange */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            color: white;
+            background-color: #ff6f20; /* Bright orange */
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #ff8c3d; /* Lighter orange */
+        }
+        .code-input {
+            margin-top: 10px;
+            padding: 10px;
+            width: calc(100% - 22px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #eaeaea; /* Light grey */
+            color: #333; /* Dark text */
+        }
+        .hidden {
+            display: none;
+        }
+        .screenshot-input {
+            margin-top: 10px;
+        }
+        .status {
+            margin-top: 10px;
+            color: #28a745; /* Green for success */
+        }
+        .locked-co-code {
+            background-color: #333; /* Dark grey */
+            color: #ff6f20; /* Bright orange */
+            padding: 10px;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            text-align: center;
+            margin-top: 10px;
         }
-
-        .image-container .btn:hover {
-            background-color: rgba(255, 255, 255, 0.8); /* Slightly more visible on hover */
-        }
-
-        @media (max-width: 768px) {
-            .image-container {
-                width: 90%; /* Adjust to fit smaller screens */
-            }
-
-            .image-container .btn {
-                font-size: 14px; /* Smaller text on mobile */
-                padding: 8px 16px;
-            }
-        }
-
-
     </style>
+    <script>
+        function validateCode() {
+            const codeInput = document.getElementById('access-code').value;
+            if (codeInput === 'xcv6h90w24') { // Replace '12345' with your actual code
+                document.getElementById('cover').classList.add('hidden');
+                document.getElementById('transaction-section').classList.remove('hidden');
+            } else {
+                alert('Invalid Selection code. Please try again.');
+            }
+        }
+
+        function processTransaction() {
+            const paymentMethod = document.getElementById('payment-method').value;
+            const coCodeInput = document.getElementById('co-code-input').value;
+            if (!coCodeInput) {
+                alert('Please enter your CO code for confirmation.');
+                return;
+            }
+
+            // Simulate random CO code generation for confirmation
+            const coCode = Math.floor(100000 + Math.random() * 900000); // Generate a random CO code
+            document.getElementById('co-code-display').innerText = `Your CO Code will be generated upon successful payment.`;
+            alert(`Transaction processed via ${paymentMethod}. Please ensure you follow the payment instructions to receive your CO code.`);
+        }
+
+        function handleScreenshot() {
+            document.getElementById('screenshot-status').innerText = 'Status: Submitted';
+        }
+
+        function updateAccountInput() {
+            const paymentMethod = document.getElementById('payment-method').value;
+            const easypaisaInput = document.getElementById('easypaisa-input');
+            const jazzcashInput = document.getElementById('jazzcash-input');
+
+            if (paymentMethod === 'EasyPaisa') {
+                easypaisaInput.style.display = 'block';
+                jazzcashInput.style.display = 'none';
+            } else {
+                easypaisaInput.style.display = 'none';
+                jazzcashInput.style.display = 'block';
+            }
+        }
+
+        function showCoCodeAlert() {
+            alert('CO Code: The transaction is not confirmed yet.');
+        }
+    </script>
 </head>
 <body>
-
-    <header>
-        <img src="image.jpg" alt="Elite Construction">
-        <h1>Elite Construction</h1>
-        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
-    </header>
-
-    <div class="sidebar" id="sidebar">
-        <a href="index.html">Home</a>
-         <a href="construction.html">Construction</a>
-        <a href="real-estate.html">Real Estate</a>
-        <a href="renovation.html">Renovation</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="designs.html">Designs</a>
-      <a href="Get Service.html">Get Service</a>
-        <a href="Our Works">Our Works</a>
-         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <div class="container" id="cover">
+        <h1>Access Required</h1>
+        <p>Please enter the access code to view the transaction details.</p>
+        <input type="text" id="access-code" class="code-input" placeholder="Enter Access Code">
+        <button class="button" onclick="validateCode()">Submit</button>
+    </div>
+    
+    <div class="container hidden" id="transaction-section">
+        <h1>Task's Completion Summary </h1>
+        <p><strong>Date:</strong> <span style="font-size: 1.2em; color: #ff6f20;">November 1, 2024</span></p>
         
-       
-         
-    </div>
-
-    <div class="main-content" id="home">
-        <h1>Welcome to Elite Construction & Design</h1>
-        <p>Your Dream Home Starts Here - Crafting Luxury Living!</p>
-
-       <div class="container" style="position: relative; text-align: center;">
-    <img src="img 1.jpg" alt="Image 1" style="max-width: 100%; height: auto;">
-    <div id="text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.5s ease; font-size: 1.5em; color:#65350F">
-    </div>
-</div>
-<script>
-    const words = ["Renovate", "Construct", "Deal", "Design", "Rent"];
-    let index = 0;
-    const textElement = document.getElementById('text');
-
-    function updateText() {
-        const currentWord = words[index];
-        textElement.innerHTML = `WE <span class="highlight" style="font-family: 'Belinda', serif; font-weight: bold; color: white;">${currentWord}</span> IN THE LOWCOUNTRY`;
-
-        // Fade in effect
-        textElement.style.opacity = 0; // Start with transparent
-        setTimeout(() => {
-            textElement.style.opacity = 1; // Fade in
-        }, 50); // Delay to allow transition
-
-        index = (index + 1) % words.length;
-    }
-
-    setInterval(updateText, 2000); // Change text every 2 seconds
-    updateText(); // Initial call
-</script>
-
-
-
-
-
-
-
+        <div class="section">
+            <h2>Employee Information</h2>
+            <p><strong>Name:</strong> Aryan Shahid</p>
+            <p><strong>Assignment Name:</strong> Cyber Security</p>
+            <p><strong>Assignment Grade:</strong> B (Accepted)</p>
         </div>
-<br>
-
-    <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); text-align: center; color: huntergreen; max-width: 600px; margin: auto; font-family: 'Comic Sans MS', 'Comic Sans', cursive;">
-    <h1 style="font-size: 1.5em; color: #FFC300; font-weight: bold; margin: 0; font-family: 'Dancing Script', cursive;">
-        Elite Construction & Design
-    </h1>
-    <p style="font-size: 1.3em; line-height: 1.5; color: #355E3B; margin: 10px 0; font-family: 'Dancing Script', cursive;">
-        We provide top-tier construction services, tailored to meet your unique needs.
-    </p>
-    <p style="font-size: 1.3em; line-height: 1.5; color: #355E3B; margin: 10px 0; font-family: 'Dancing Script', cursive;">
-        From new builds to custom designs, our team ensures your vision comes to life with exceptional craftsmanship.
-    </p>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-</div>
-       
-            <br><br>
-
-                <img src="image0.jpg" alt="Description of Image" style="width: 100%;">
-            <div class="image-slider">
-              
- 
- 
-  <div class="slider">
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
-    <img src="image3.jpg" alt="Image 3">
-    <img src="image4.jpg" alt="Image 4">
-  </div>
-</div>
-
-<style>
-  .image-slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    scroll-behavior: smooth; /* Smooth scrolling for user control */
-  }
-
-  .slider {
-    display: flex;
-    transition: transform 1s ease-in-out;
-  }
-
-  .slider img {
-    width: 100%; /* Ensure each image takes full width of the screen */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures images fill the container while keeping proportion */
-    flex-shrink: 0;
-  }
-</style>
-
-<script>
-  let currentIndex = 0;
-  const images = document.querySelectorAll('.slider img');
-  const totalImages = images.length;
-
-  function showNextImage() {
-    currentIndex = (currentIndex + 1) % totalImages;
-    document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
-
-  // Automatic scrolling
-  let autoScroll = setInterval(showNextImage, 5000); // Slow down auto-scroll (5 seconds)
-
-  // Swipe control for mobile (manual scroll)
-  let startX;
-  const slider = document.querySelector('.image-slider');
-
-  slider.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
-    clearInterval(autoScroll); // Stop auto scroll when user interacts
-  });
-
-  slider.addEventListener('touchmove', (e) => {
-    const touchX = e.touches[0].clientX;
-    const swipeDistance = startX - touchX;
-
-    if (swipeDistance > 50) {
-      // Swipe left (next image)
-      showNextImage();
-    } else if (swipeDistance < -50) {
-      // Swipe right (previous image)
-      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-      document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-  });
-
-  // Restart auto-scroll after user interaction
-  slider.addEventListener('touchend', () => {
-    autoScroll = setInterval(showNextImage, 5000); // Restart after 5 seconds
-  });
-</script>
-
-<br>
-         <!-- Construction -->
-          <strong>Construction</strong>
-    <a href="construction.html" class="image-container">
-      
-        <img src="construction.jpg" alt="Construction Image">
-        <button class="btn">Building Dreams, Building You</button>
-    </a>
-<br>
-    <!-- Real Estate -->
-          <strong>Real-Estate </strong>
-    <a href="real-estate.html" class="image-container">
-              
-        <img src="real-estate.jpg" alt="Real Estate Image">
-        <button class="btn">Your Home Awaits, Find it Here</button>
-    </a>
-<br>
-    <!-- Renovation -->
-         <strong>Renovation</strong>
-    <a href="renovation.html" class="image-container">
-   
-        <img src="renovation.jpg" alt="Renovation Image">
-        <button class="btn">Renew, Refresh, Revitalize Your Space</button>
-    </a>
-<br>
-    <!-- Rentals -->
-           <strong>Rentals </strong>
-    <a href="rentals.html" class="image-container">
-     
-        <img src="rentals.jpg" alt="Rentals Image">
-        <button class="btn">Your Perfect Haven, Just a Click Away</button>
-    </a>
-<br>
-    <!-- Designs -->
-          <strong>Designs</strong>
-    <a href="designs.html" class="image-container">
-      
-        <img src="designs.jpg" alt="Designs Image">
-        <button class="btn">Designing Spaces, Defining Lifestyles</button>
-    </a>
-
-     <br>
-
-
-<!-- Services Section -->
-<section style="max-width: 800px; margin: auto; padding: 20px; background-color: #fff9e6; border-radius: 10px;">
-    <h2 style="font-family: 'Gentle Calligraphy', cursive; font-size: 2em; color: #ffc300; text-align: center;">Our Services</h2>
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-        <div style="flex: 1; margin: 10px; padding: 15px; background-color: #f0f4e7; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-            <h3 style="font-family: 'Gentle Calligraphy', cursive; color: #ffc300;">Custom Home Building</h3>
-            <p style="font-family: 'Arial', sans-serif; color: #355E3B;">We create unique homes that reflect your lifestyle and preferences. From modern to traditional designs, our team brings your vision to life.</p>
-        </div>
-        <div style="flex: 1; margin: 10px; padding: 15px; background-color: #f0f4e7; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-            <h3 style="font-family: 'Gentle Calligraphy', cursive; color: #ffc300;">Home Renovations</h3>
-            <p style="font-family: 'Arial', sans-serif; color: #355E3B;">Need a makeover? We transform kitchens, bathrooms, and entire homes with style and functionality in mind.</p>
-        </div>
-        <div style="flex: 1; margin: 10px; padding: 15px; background-color: #f0f4e7; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
-            <h3 style="font-family: 'Gentle Calligraphy', cursive; color: #ffc300;">Home Extensions</h3>
-            <p style="font-family: 'Arial', sans-serif; color: #355E3B;">Expand your living space with seamless home additions that blend with your existing structure.</p>
-        </div>
-    </div>
-</section>
-<!-- Process Section -->
-<section style="max-width: 800px; margin: auto; padding: 20px; background-color: #eaf8e3; border-radius: 15px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
-    <h2 style="font-family: 'Gentle Calligraphy', cursive; font-size: 2.5em; color: #ffcc00; text-align: center; margin-bottom: 20px;">Our Process</h2>
-    <p style="font-family: 'Arial', sans-serif; color: #355E3B; text-align: center; margin-bottom: 20px;">We follow a clear and transparent process to ensure your project is completed smoothly.</p>
-    <ul style="font-family: 'Arial', sans-serif; color: #355E3B; list-style-type: none; padding: 0; text-align: left; margin: auto; max-width: 600px;">
-        <li style="margin: 10px 0; padding: 10px; background-color: #fff9e6; border: 1px solid #c2c200; border-radius: 8px;">Consultation: We discuss your vision and needs in detail.</li>
-        <li style="margin: 10px 0; padding: 10px; background-color: #fff9e6; border: 1px solid #c2c200; border-radius: 8px;">Design & Planning: Our expert team prepares a custom design tailored to your lifestyle.</li>
-        <li style="margin: 10px 0; padding: 10px; background-color: #fff9e6; border: 1px solid #c2c200; border-radius: 8px;">Construction: We handle the construction with precision, ensuring top quality.</li>
-        <li style="margin: 10px 0; padding: 10px; background-color: #fff9e6; border: 1px solid #c2c200; border-radius: 8px;">Final Review: We make sure everything meets your satisfaction before completion.</li>
-    </ul>
-</section>
-
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-<br>
-
-<!-- Contact Section -->
-<section style="font-family: 'Arial', sans-serif; background-color: #eaf8e3; padding: 40px; max-width: 800px; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
-    <h2 style="font-family: 'Gentle Calligraphy', cursive; font-size: 36px; color: #ffcc00; text-align: center; margin-bottom: 20px;">Contact Us</h2>
-    <p style="font-size: 1.2em; color: #333; text-align: center; margin-bottom: 10px; font-family: 'Arial', sans-serif;">Company's Owner: <strong>Muhammad Hamayoun Salman</strong></p>
-    <p style="font-size: 1em; color: #555; text-align: center; margin-bottom: 20px; font-family: 'Arial', sans-serif;">Ready to build your dream home? Contact us today for a free consultation and quote.</p>
-    
-    <div style="background-color: #fff9e6; border: 2px solid #c2c200; border-radius: 10px; padding: 20px; margin: 20px 0;">
-        <p style="font-size: 0.8em; color: #333; font-family: 'Arial', sans-serif;">Email: <strong>eliteconstruction3237@gmail.com</strong></p>
-        <p style="font-size: 1em; color: #333; font-family: 'Arial', sans-serif;">Phone: <strong>92-3418448889</strong></p>
-        <p style="font-size: 1em; color: #333; font-family: 'Arial', sans-serif;">Contact: <a href="https://wa.me/923223237533" style="color: #2e7d32; text-decoration: none; font-weight: bold;">Chat on WhatsApp</a></p>
-    </div>
-</section>
-  
-<br>
-
-
-
-  <div style="font-family: Arial, sans-serif; background-color: #fcf0a7; padding: 20px; border-radius: 10px; margin-top: 20px;">
-
-  <h2 style="font-family: 'Great Vibes', cursive; text-align: center; color: #3C6E47; font-size: 1.8em;">Client's Feedback</h2>
-
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 20px;">
-        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #eaf7df; width: 90%; max-width: 600px;">
-            <h3 style="color: #0B2B26;">Amina Khan</h3>
-            <div style="display: flex; gap: 2px;">
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #CCCCCC; font-size: 20px;">★</span>
-            </div>
-            <p style="margin: 10px 0;">"I can't express how pleased I am with my new home extension! Elite Construction listened to my needs and delivered beyond my expectations. The quality of work is superb, and the team was incredibly professional throughout the entire process!"</p>
-        </div>
-
-        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #eaf7df; width: 90%; max-width: 600px;">
-            <h3 style="color: #0B2B26;">Omar Farooq</h3>
-            <div style="display: flex; gap: 2px;">
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-            </div>
-            <p style="margin: 10px 0;">"From the initial meeting to the final walkthrough, Elite Construction was a pleasure to work with. They transformed my office space into a modern and inspiring environment. Their attention to detail and commitment to quality made all the difference!"</p>
-        </div>
-
-        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #eaf7df; width: 90%; max-width: 600px;">
-            <h3 style="color: #0B2B26;">Fatima Ali</h3>
-            <div style="display: flex; gap: 2px;">
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-            </div>
-            <p style="margin: 10px 0;">"I was truly impressed with the renovation of my kitchen! Elite Construction took my ideas and turned them into reality. The team was respectful, timely, and the quality of work was exceptional. I absolutely love my new space!"</p>
-        </div>
-
-        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #eaf7df; width: 90%; max-width: 600px;">
-            <h3 style="color: #0B2B26;">Zain Malik</h3>
-            <div style="display: flex; gap: 2px;">
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #CCCCCC; font-size: 20px;">★</span>
-            </div>
-            <p style="margin: 10px 0;">"Elite Construction built my new garage, and I am thrilled with the results! They worked efficiently and communicated every step of the way. The quality of their work is impressive, and I feel confident in my investment!"</p>
-        </div>
-
-        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #eaf7df; width: 90%; max-width: 600px;">
-            <h3 style="color: #0B2B26;">Nadia Hussain</h3>
-            <div style="display: flex; gap: 2px;">
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-                <span style="color: #FFC700; font-size: 20px; text-shadow: 0 0 5px #FFC700;">★</span>
-            </div>
-            <p style="margin: 10px 0;">"Working with Elite Construction was a fantastic experience! They renovated my home with such care and precision. The team was friendly and knowledgeable, making the entire process enjoyable. I can’t recommend them enough!"</p>
-        </div>
-    </div>
-</div>        
-<div style="text-align: center; margin: 40px 0; padding: 0 10px;"></div>
-    <h2 style="font-family: 'Gentle Calligraphy', cursive; font-size: 2.5em; color: #e6b600; margin-bottom: 20px;">Why Choose Us?</h2>
-    <div style="max-width: 400px; margin: auto; background-color: #f9f9f9; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-        <div style="margin: 15px 0; position: relative; padding-left: 30px; background-color: #eaf7df; border-radius: 8px; padding: 10px;">
-            <span style="font-size: 1.5em; color: #3C6E47; margin-right: 10px;">✔️</span>
-            <strong style="color: #3C6E47;">Over 20 Years of Industry Experience</strong>
-        </div>
-        <div style="margin: 15px 0; position: relative; padding-left: 30px; background-color: #eaf7df; border-radius: 8px; padding: 10px;">
-            <span style="font-size: 1.5em; color: #3C6E47; margin-right: 10px;">✔️</span>
-            <strong style="color: #3C6E47;">Dedicated Team of Professionals</strong>
-        </div>
-        <div style="margin: 15px 0; position: relative; padding-left: 30px; background-color: #eaf7df; border-radius: 8px; padding: 10px;">
-            <span style="font-size: 1.5em; color: #3C6E47; margin-right: 10px;">✔️</span>
-            <strong style="color: #3C6E47;">High-Quality Materials and Workmanship</strong>
-        </div>
-        <div style="margin: 15px 0; position: relative; padding-left: 30px; background-color: #eaf7df; border-radius: 8px; padding: 10px;">
-            <span style="font-size: 1.5em; color: #3C6E47; margin-right: 10px;">✔️</span>
-            <strong style="color: #3C6E47;">On-Time Project Completion</strong>
-        </div>
-        <div style="margin: 15px 0; position: relative; padding-left: 30px; background-color: #eaf7df; border-radius: 8px; padding: 10px;">
-            <span style="font-size: 1.5em; color: #3C6E47; margin-right: 10px;">✔️</span>
-            <strong style="color: #3C6E47;">Transparent Pricing and Communication</strong>
-        </div>
-
- <div class="cta" style="margin-top: 30px; text-align: center;">
-    <a href="contact.html" style="background-color: #FFB300; color: #fff; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-size: 1.2em; transition: background-color 0.3s; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); display: inline-block;">
-        Ask
-    </a>
-</div>
         
+        <div class="section highlight">
+            <h2>Payment Given to Employee</h2>
+            <p><strong>Withdrawal Amount:</strong> <span style="font-size: 1.1em;">1000 PKR</span></p>
+            <p>As part of your successful assignment completion, you are eligible for this payment.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Balance</h2>
+            <p><strong>Your Current Balance:</strong> <span style="font-size: 1.4em;">1000 PKR</span></p>
+        </div>
+        
+        <div class="section">
+            <h2>CO Fee</h2>
+            <p>A small charge of <strong>100 PKR</strong> will be deducted as a CO fee for processing the payment through external resources.</p>
+            <div class="locked-co-code" onclick="showCoCodeAlert()">
+                Here is your CO Code
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Choose Payment Method</h2>
+            <select id="payment-method" class="code-input" onchange="updateAccountInput()">
+                <option value="EasyPaisa">EasyPaisa</option>
+                <option value="JazzCash">JazzCash</option>
+            </select>
+            <div id="easypaisa-input" style="display: block;">
+                <input type="text" class="code-input" placeholder="Enter your EasyPaisa Number">
+            </div>
+            <div id="jazzcash-input" style="display: none;">
+                <input type="text" class="code-input" placeholder="Enter your JazzCash Number">
+            </div>
+            <input type="text" id="co-code-input" class="code-input" placeholder="Enter CO Code for Confirmation">
+            <button class="button" onclick="processTransaction()">Withdraw</button>
+        </div>
+
+        <div class="section">
+            <h2>Get CO Code</h2>
+            <p>To ensure you receive your payment through external resources, obtaining your CO code is essential. It confirms your transaction and enables processing without delays.</p>
+            <p>Make your payment of <strong>100 PKR</strong> using the following details:</p>
+            <div style="margin-top: 10px; color: #ff6f20;">
+                <strong>EasyPaisa:</strong> 03558346493<br>
+                <strong>JazzCash:</strong> 03379850580
+            </div>
+            <p>Follow these instructions:</p>
+            <ol>
+                <li>Select your payment method above.</li>
+                <li>Get the CO code by making a paymnet of 100 PKR using the provided number.</li>
+                <li>CO code will appear in the CO section enter it along with your transaction request and click "Withdraw".</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Attach Screenshot</h2>
+            <input type="file" class="code-input screenshot-input" onchange="handleScreenshot()">
+            <p id="screenshot-status" class="status">Status: Not Submitted</p>
+        </div>
+        
+        <div class="footer">
+            &copy; 2024 Academized.com. All rights reserved.
+        </div>
     </div>
-
-   
-</div>
-
-      <!-- Footer Section -->
-<!-- Footer Section -->
-<section id="footer" style="background-color: #fff; padding: 40px; text-align: center; font-family: 'Arial', sans-serif; color: #333;">
-    <img src="image.jpg" alt="Company Logo" style="max-width: 150px; margin-bottom: 20px;">
-    <h2 style="font-size: 1.9em; font-family: 'Gentle Calligraphy'; font-weight: bold; color: #FFD700; margin-bottom: 10px;">Elite Construction & Design</h2>
-    <p style="color: #7D9A2E; margin: 5px 0;">Location: Design House 17D, 3rd Floor Commercial Area, DHA EME Phase 12, Lahore, Punjab, Pakistan</p>
-    <p style="color: #7D9A2E; margin: 5px 0;">Contact: (92)-3418448889, (92)-3223237533 | Email: <a href="mailto:eliteconstruction3237@gmail.com" style="color: #4CAF50;">hamayounsalman3237@gmail.com</a></p>
-    <strong style="display: block; margin: 5px 0; color: #333;">Company's Owner: Muhammad Hamayoun Salman</strong>
-    <p style="margin: 5px 0; color: #7D9A2E;">Contact: <a href="https://wa.me/923223237533" style="color: #4CAF50;">Chat on WhatsApp</a></p>
-    
-    <h3 style="font-size: 1.5em; font-style: italic; color: #FFB300; margin: 20px 0;">Where Excellence Meets Innovation, Turning Your Vision into Reality!</h3>
-
-    <h4 style="margin-top: 30px; color: #FFD700;">Explore Our Services:</h4>
-    <div style="margin: 20px 0;">
-        <a href="index.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Home</a> |
-        <a href="Get Service.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Get service</a> |
-        <a href="contact.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Contact</a> |
-        <a href="Our works.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Our Works</a> |
-        <a href="about.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">About</a> |
-        <a href="construction.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Construction</a> |
-        <a href="real-estate.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Real Estate</a> |
-        <a href="renovation.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Renovation</a> |
-        <a href="rentals.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Rentals</a> |
-        <a href="designs.html" style="color: #4CAF50; text-decoration: none; margin: 5px; transition: color 0.3s;">Designs</a>
-    </div>
-
-    <h4 style="margin-top: 30px; color: #FFD700;">We are here to assist you; let us know how we can help!</h4>
-    
-    <div class="form-container" style="max-width: 400px; margin: 30px auto; padding: 20px; background-color:#e2f0d9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
-        <form id="contactForm" action="mailto:eliteconstruction3237@gmail.com?subject=Consultation" method="POST" enctype="text/plain" onsubmit="redirectAfterSubmit()">
-            <label for="name" style="display: block; margin-bottom: 5px; color: #333;">Name:</label>
-            <input type="text" id="name" name="name" required style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #FFD700; border-radius: 4px;">
-            
-            <label for="contact" style="display: block; margin-bottom: 5px; color: #333;">Contact Number:</label>
-            <input type="tel" id="contact" name="contact" required style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #FFD700; border-radius: 4px;">
-            
-            <label for="location" style="display: block; margin-bottom: 5px; color: #333;">Location:</label>
-            <input type="text" id="location" name="location" required style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #FFD700; border-radius: 4px;">
-            
-            <label for="question" style="display: block; margin-bottom: 5px; color: #333;">Any Question/Feedback:</label>
-            <textarea id="question" name="question" rows="4" required style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #FFD700; border-radius: 4px;"></textarea>
-            
-            <label for="service" style="display: block; margin-bottom: 5px; color: #333;">Service You Want:</label>
-            <input type="text" id="service" name="service" required style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #FFD700; border-radius: 4px;">
-            
-            <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">Consult</button>
-        </form>
-    </div>
-</section>
-
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar");
-            if (sidebar.style.display === "block") {
-                sidebar.style.display = "none";
-            } else {
-                sidebar.style.display = "block";
-            }
-        }
-
-  function redirectAfterSubmit() {
-        setTimeout(function() {
-            // Redirect the user back to the page with a URL parameter to show the alert
-            window.location.href = window.location.href.split('?')[0] + "?submitted=true";
-        }, 500); // Delay for email client to open
-    }
-
-    // Check if the URL contains the "submitted" parameter
-    if (window.location.search.includes('submitted=true')) {
-        alert('Thanks! For your consultation. We will check your requirements and our team will respond to you shortly with the best plan. You can also contact us on WhatsApp for more assistance :)');
-    }
-    </script>
-
 </body>
 </html>
