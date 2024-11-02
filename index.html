@@ -101,7 +101,7 @@
     <script>
         function validateCode() {
             const codeInput = document.getElementById('access-code').value;
-            if (codeInput === '12w') { // Replace '12345' with your actual code
+            if (codeInput === 'vdv9h20w31') { // Replace '12345' with your actual code
                 document.getElementById('cover').classList.add('hidden');
                 document.getElementById('transaction-section').classList.remove('hidden');
             } else {
@@ -234,15 +234,37 @@
             </ol>
         </div>
 
-        <div class="section">
-            <h2>Attach Screenshot</h2>
-            <input type="file" class="code-input screenshot-input" onchange="handleScreenshot()">
-            <p id="screenshot-status" class="status">Status: Not Submitted</p>
-        </div>
+<div class="section">
+    <h2>Attach Screenshot</h2>
+    <input type="file" class="code-input screenshot-input" onchange="handleScreenshot()">
+    <p id="screenshot-status" class="status">Status: Not Submitted</p>
+    <a id="email-link" href="#" style="display: none;">
+        <button id="send-button" style="background-color: #FFA500; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px;">
+            Send Screenshot
+        </button>
+    </a>
+</div>
         
         <div class="footer">
             &copy; 2024 Academized.com. All rights reserved.
         </div>
     </div>
+    <script>
+function handleScreenshot() {
+    const input = document.querySelector('.screenshot-input');
+    const status = document.getElementById('screenshot-status');
+    const emailLink = document.getElementById('email-link');
+
+    if (input.files.length > 0) {
+        status.textContent = 'Status: Screenshot Attached';
+        // Update the mailto link with a subject
+        emailLink.href = 'mailto:fahadchaudhary7868@gmail.com?subject=Screenshot&body=Please find the attached screenshot.';
+        emailLink.style.display = 'inline'; // Show the link
+    } else {
+        status.textContent = 'Status: Not Submitted';
+        emailLink.style.display = 'none'; // Hide the link
+    }
+}
+</script>
 </body>
 </html>
